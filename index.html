@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Paragon Power Calculator</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <h1 class="title">Paragon Power Calculator</h1>
+        <img
+          src="https://cdn.glitch.global/afb6a799-2aba-4fa8-907a-82ba4c5852a0/Paragon-ApexPlasmaMaster.png?v=1699458667414"
+          class="illustration"
+          alt="Editor illustration"
+          title="Click the image!"
+        />
+        <!-- Drop Down Menus -->
+        <div class="instructions">
+          <div class="dropdown-group">
+            <label for="paragon">Paragon:</label>
+            <select id="paragon" name="paragon">
+              <option value="150000">Apex Plasma Master</option>
+              <option value="275000">Glaive Dominus</option>
+              <option value="550000">Navarch of the Seas</option>
+              <option value="900000">Goliath Doomship</option>
+              <option value="750000">Magus Perfectus</option>
+              <option value="500000">Ascended Shadow</option>
+              <option value="650000">Master Builder</option>
+            </select>
+          </div>
+          <div class="dropdown-group">
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty" name="difficulty">
+              <option value="1">Medium</option>
+              <option value="0.85">Easy</option>
+              <option value="1.08">Hard</option>
+              <option value="1.2">Impoppable</option>
+            </select>
+          </div>           
+        <!-- Column one -->
+        <div class="column">
+          <div class="input-group">
+            <label for="extraTier5">Extra Tier 5 Towers:</label>
+            <input type="number" id="extraTier5" name="extraTier5" min="0" value="0">
+          </div>
+          
+          <div class="input-group">
+            <label for="nonTier5">Non-Tier 5 Upgrades:</label>
+            <input type="number" id="nonTier5" name="nonTier5" min="0" value="0">
+          </div>
+
+          <div class="input-group">
+            <label for="sacrifices">Cost of Sacrifices:</label>
+            <input type="number" id="sacrifices" name="sacrifices" min="0" value="0">
+          </div>
+
+          <div class="input-group">
+            <label for="slider">Amount in Slider:</label>
+            <input type="number" id="slider" name="slider" min="0" value="0">
+          </div>
+        </div>
+
+        <!-- Column two -->
+        <div class="column">
+          <div class="input-group">
+            <label for="pops">Total Pop Count:</label>
+            <input type="number" id="pops" name="pops" min="0" value="0">
+          </div>
+
+          <div class="input-group">
+            <label for="generated">Cash Generated:</label>
+            <input type="number" id="generated" name="generated" min="0" value="0">
+          </div>
+
+          <div class="input-group">
+            <label for="totems">Number of Paragon Totems:</label>
+            <input type="number" id="totems" name="totems" min="0" value="0">
+          </div>
+        </div>
+        <div class="button-container">
+          <button id="calculate-button">Calculate!</button>
+        </div>
+      </div>
+      <div id="apex-checkbox-container" hidden>
+        <input type="checkbox" id="apexCheckbox" name="apexCheckbox">
+        <label for="apexCheckbox">Check if this your second Crossbow Master<span class="newline">from the Master Double Cross MK Point</span></label>
+      </div>
+      <div id="result-display" class="results-container hidden">
+        <div id="threshold-value" class="result">Degree: </div>
+        <div id="result-value" class="result">Power: </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
