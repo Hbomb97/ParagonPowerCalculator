@@ -108,20 +108,20 @@ document.getElementById('calculate-button').addEventListener('click', function()
 
 // Define a mapping of paragon values to image URLs
 const paragonImages = {
-  '150000': 'https://cdn.glitch.global/afb6a799-2aba-4fa8-907a-82ba4c5852a0/Paragon-ApexPlasmaMaster.png?v=1699458667414',
-  '275000': 'https://cdn.glitch.global/afb6a799-2aba-4fa8-907a-82ba4c5852a0/ParagonGlaiveDominus.png?v=1699458668691',
-  '550000': 'https://cdn.glitch.global/afb6a799-2aba-4fa8-907a-82ba4c5852a0/Navarch.png?v=1699458666897',
-  '900000': 'https://cdn.glitch.global/afb6a799-2aba-4fa8-907a-82ba4c5852a0/GoliathDoomship.png?v=1699458664030',
-  '750000': 'https://cdn.glitch.global/afb6a799-2aba-4fa8-907a-82ba4c5852a0/MagnusPerfectus.png?v=1699458665269',
-  '500000': 'https://cdn.glitch.global/afb6a799-2aba-4fa8-907a-82ba4c5852a0/Paragon-AscendedShadow.png?v=1699458668083',
-  '650000': 'https://cdn.glitch.global/afb6a799-2aba-4fa8-907a-82ba4c5852a0/EngineerParagon.png?v=1699458669354',
+  '150000': 'images/Paragon-ApexPlasmaMaster.png',
+  '275000': 'images/ParagonGlaiveDominus.png',
+  '550000': 'images/Navarch.png',
+  '900000': 'images/GoliathDoomship.png',
+  '750000': 'images/MagnusPerfectus.png',
+  '500000': 'images/Paragon-AscendedShadow.png',
+  '650000': 'images/EngineerParagon.png',
 };
 
 // Function to update the image source based on the selected paragon value
 function updateImage() {
   var paragonSelect = document.getElementById('paragon');
   var selectedValue = paragonSelect.value;
-  var newImageUrl = paragonImages[selectedValue] || 'https://cdn.glitch.global/afb6a799-2aba-4fa8-907a-82ba4c5852a0/Paragon-ApexPlasmaMaster.png?v=1699458667414';
+  var newImageUrl = paragonImages[selectedValue] || 'images/Paragon-ApexPlasmaMaster.png';
   document.querySelector('.illustration').src = newImageUrl;
 }
 
